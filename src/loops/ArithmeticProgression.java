@@ -16,8 +16,6 @@ public class ArithmeticProgression {
 			System.out.println(a+i*d);
 		}
 		s.close();
-		
-		//using git
 	}
 
 }
