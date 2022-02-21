@@ -2,6 +2,7 @@ package collectionFramework.studentChallenge;
 
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class Account implements Serializable{
 	String accno;
     String name;

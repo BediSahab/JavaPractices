@@ -19,10 +19,12 @@ public class PropertiesDemo {
 		System.out.println(p);
 		
 		//to store in external files .txt, .xml
-		p.store(new FileOutputStream("G:\\Selenium\\Trainings\\LearningJavaBegineerToMaster\\src\\newfile.txt"), "Laptop");
+		String path = System.getProperty("user.dir");
+		
+		p.store(new FileOutputStream(path+"\\src\\newfile.txt"), "Laptop");
 		
 		// to read .txt or .xml
-		p.load(new FileInputStream("G:\\\\Selenium\\\\Trainings\\\\LearningJavaBegineerToMaster\\\\src\\\\newfile.txt"));
+		p.load(new FileInputStream(path+"\\\\src\\\\newfile.txt"));
 		System.out.println(p.getProperty("Browser"));
 	}
  
